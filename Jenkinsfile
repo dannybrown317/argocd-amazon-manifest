@@ -12,7 +12,7 @@ node {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     withCredentials([usernamePassword(credentialsId: 'dannybrown317-github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                         //script {def encodedPassword = URLEncoder.encode("$GIT_PASSWORD",'UTF-8')}
-                        //script  {def IMAGE='easnae817/amazon'}
+                        //script  {def IMAGE='dannybrown317/amazonweekone'}
                         sh "git config user.email dannybrown317@gmail.com"
                         sh "git config user.name dannybrown317"
                         //sh "git switch master"
